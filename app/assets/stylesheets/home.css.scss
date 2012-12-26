@@ -1,0 +1,68 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin gradient-radial($innerColor: #555, $outerColor: #333)  {
+  background-color: $outerColor;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
+  background-image: -webkit-radial-gradient(circle, $innerColor, $outerColor);
+  background-image: -moz-radial-gradient(circle, $innerColor, $outerColor);
+  background-image: -o-radial-gradient(circle, $innerColor, $outerColor);
+  background-repeat: no-repeat;
+}
+
+html{
+   margin:0;
+   padding:0;
+   height: 100%;
+   /* background-color: #bf2222; */
+   @include gradient-radial(#bf2222, #760000);
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   background-image: url("bg.png");
+   background-repeat: repeat;
+   min-height: 95%;
+   font-family: "open sans"
+}
+.home{
+   ul.menu{
+      margin:0;
+      padding-left: 0px;
+      width: 450px;
+      float: left;
+      li{
+         list-style: none;
+         display: inline-block;
+         border-right: 1px dotted white;
+         a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 12px;
+            margin-left: 12px;
+         }
+      }
+      li:last-child{
+         border: none;
+      }
+   }
+
+   ul.social_networks{
+      width: 200px;
+      float: right;
+      margin:0;
+      padding: 0;
+      margin-top: -5px;
+      text-align: right;
+      margin-right: 25px;
+      li{
+         list-style: none;
+         display: inline-block;
+         margin-right: 15px;
+      }   
+   }
+}
