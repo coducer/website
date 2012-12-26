@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: website_development
   pool: 5
-  username: website
+  username: jaikeerthi
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
