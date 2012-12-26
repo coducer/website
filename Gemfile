@@ -4,7 +4,6 @@ gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'pg'
 gem "haml-rails"
 gem "pry"
@@ -18,6 +17,10 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'bootstrap-sass'
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem "sqlite3"
 end
 
 gem 'jquery-rails'
