@@ -9,6 +9,7 @@ gem 'pg'
 gem "haml-rails"
 gem "pry"
 gem "pry-rails"
+gem "heroku"
 
 # Gems used only for assets and not required
 # in production environments by default.
