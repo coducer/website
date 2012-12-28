@@ -102,14 +102,14 @@ div{
 		min-height:600px;
 		margin-top:35px;
 		background:white;
-		border-radius:15px;
+		border-radius:5px;
     		h1.logo{
 			margin: 10px;
         		font-size:40px;
         		color:#bf0000;
         		float: left;
-        	 	text-shadow: 2px 1px 6px black;
-        		font-family: open sans;
+        	 	//text-shadow: 2px 1px 6px black;
+        		//font-family: open sans;
         		font-weight: bold;
 			}
 	  	a.logo{
@@ -123,13 +123,38 @@ div{
 		  }
 		hr{
 			clear: both;
-			border-color: #bf0000;
+			border:none;
+			border-bottom:1px solid #bf0000;
 		  }
+		div.link{
+                        a
+                                {
+                                        float:left;
+                                        text-decoration: none;
+                                        margin-bottom:10px;
+                                        margin-left:25px;
+                                        color:black;
+                                }
+			.current
+				{
+					color:#bf0000;
+				}
+ 				a:first-child
+				{
+                                        margin-left:10px;
+				}
+                                hr
+                                {
+					border:none;
+                                        border-bottom:1px solid #bf0000;
+                                }
+                        }
+	
 		p{
 			margin:10px;
-			font-size:30px;
+			font-size:25px;
 			font-weight:bold;
-			color:green;
+			color:#5a5a5a;
 			text-align:left;	
 		 }
 		ul.jobs
@@ -139,42 +164,58 @@ div{
 				list-style: none;
 				h1
 				{
-					font-size:25px;
+					font-size:20px;
 					width:800;
 					color:#bf0000;
 				}
 				h2
 				{
+					text-decoration:none;
 					font-size:15px;
 					width:700;
 					margin-left:25px;
+					font-weight:normal;
+				}
+				a.box
+				{
+					text-decoration:none;
+					width:85px;
+					background:#009800;
+					color:white;
+					font-size:13px;
+					padding:4px 8px;
+					font-weight:bold;
+					//padding-left:8px;
+					//padding-right:8px;	
+					border-radius:5px;
+					margin-left:25px;
+					box-shadow:1px 1px 3px #ccc
 				}
 				a
 				{
-					width:85px;
-					background:#0000ff;
-					text-decoration:none;
-					color:white;
-					padding-left:3px;
-					padding-right:3px;	
-					border-radius:2px;
-					margin-left:25px;
+					text-decoration:underline;
+					font-size:10px;
+					margin-left:10px;
+					color:black;
 				}
 			}
-			hr
+			 hr.split
                         {
-                        	clear: both;
-				border:none;
-				width:96%;
-				border-bottom: 1px dashed #8b008b;	
+                                clear: both;
+                                border:none;
+				margin-right:30px;
+                                border-right:20px;
+                                border-bottom: 1px dashed #ccc;
                         }
+
 		}
+
 		.product
-		{
+		{	
 			div.product
 			{
-				width:580px;
-				min-height:450px;
+				width:610px;
+				min-height:430px;
 			        margin-left:20px;
 				margin-top:20px;
 				float:left;
@@ -197,21 +238,34 @@ div{
 			}
 			div.soft
 			{
-				width:300px;
-				min-height:450px;
+				width:270px;
+				min-height:430px;
 				margin-left:20px;
 				margin-top:20px;
 				float:left;
 				padding-left:20px;
 				border-left:2px solid #bf0000;
+				//background:#E8E8E8;
 				ul.soft
 				{
+					li
+					{
+						h5
+						{
+							font-size:10px;
+						}
+					}
 					h3
 					{
 						font-size:20px;
 						color:#bf0000;
 						margin-left:20px;
 					}
+				}
+				hr
+				{
+					border:none;
+                                	border-bottom: 1px dashed #bf0000;
 				}
 			}
 		}
