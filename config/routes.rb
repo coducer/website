@@ -4,4 +4,5 @@ Website::Application.routes.draw do
   get "/careers/apply" => "home#apply"
   get "/careers/details" => "home#details"
   get "/product" => "home#product"
+  get "/contact" => "home#contact"
 end

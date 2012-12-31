@@ -9,4 +9,6 @@ class HomeController < ApplicationController
   end
   def product
   end
+  def contact
+  end
 end
