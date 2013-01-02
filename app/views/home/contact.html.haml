@@ -5,16 +5,27 @@
     %hr
     = render partial: "home/menu"
     .contact
-      %h2 Address
-      %h4 1096,Ground Floor,
-      %h4 12th 'A' Main,
-      %h4 HAL 2nd stage, Indiranagar,
-      %h4 Bangalore-560008.
+      %h1 ADDRESS
+      %div
+        %h2 Bangalore
+        %h4 1096,Ground Floor,
+        %h4 12th 'A' Main,
+        %h4 HAL 2nd stage, Indiranagar,
+        %h4 Bangalore-560008.
+      %div
+        %h2 Coimbatore
+        %h4 1096,Ground Floor,
+        %h4 12th 'A' Main,
+        %h4 HAL 2nd stage, Indiranagar,
+        %h4 Bangalore-560008.
       %table
         %tr
-          %td= image_tag("callme.png")
-          %td 91 9741449619
-      %table
+          %td
+            = image_tag("callme.png") 
+          %td
+            91 9741449619  
         %tr
-          %td= image_tag("mailme.png") 
-          %td jai@eatwithus.in
+          %td
+            = image_tag("mailme.png") 
+          %td
+            jai@eatwithus.in         

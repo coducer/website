@@ -28,55 +28,64 @@ body{
    min-height: 95%;
    font-family: "open sans";
 }
-.home{
-   div.company{
-	margin: 0 auto;
-	width: 800px;
-	padding-top: 13%; 
-    h1{
-	font-size:80px;
-	color: white;
-	float: left;
-	text-shadow: 2px 1px 6px black;
-	font-family: open sans;
-	font-weight: bold;
-	margin-bottom:0;
-    }
-    h2{
-	font-size:50px;
-	color: white;
-	float: left;
-	padding-top: 45px;
-	margin-left: 25px;
-	color:#2F0000;
-	border-bottom:2px;
-    }
-}  
-div{
-      	clear:both;
-		ul.menu{
+.home
+{
+	div.company
+	{
+		margin: 0 auto;
+		width: 800px;
+		padding-top: 13%; 
+    		h1
+		{
+			font-size:80px;
+			color: white;
+			float: left;
+			text-shadow: 2px 1px 6px black;
+			font-family: open sans;
+			font-weight: bold;
+			margin-bottom:0;
+	    	}
+    		h2
+		{
+			font-size:50px;
+			color: white;
+			float: left;
+			padding-top: 45px;
+			margin-left: 25px;
+			color:#2F0000;
+			border-bottom:2px;
+    		}
+	}  
+	div
+	{
+      		clear:both;
+		ul.menu
+		{
 			margin:0;
       			padding-left: 0px;
-      			width: 450px;
+      			width: 460px;
       			float: left;
-      		li{
-         		list-style: none;
-         		display: inline-block;
-         		border-right: 1px dotted white;
-         		a{
-            			color: white;
-            			text-decoration: none;
-            			font-size: 18px;
-            			margin-right: 12px;
-            			margin-left: 12px;
-          		 }
-      	  	}
-      		li:last-child{
-        		border: none;
-          		     }
-   			}
-
-		ul.social_networks{
+      			li
+			{
+         			list-style: none;
+         			display: inline-block;
+         			border-right: 1px dotted white;
+         			a
+				{
+            				color: white;
+            				text-decoration: none;
+            				font-size: 18px;
+            				margin-right: 12px;
+            				margin-left: 12px;
+          		 	}	
+      	  		}
+      			li:last-child
+			{
+        			border: none;
+          		}
+   		}
+		ul.social_networks
+		{
       			width: 200px;
       			float: right;
       			margin:0;
@@ -84,13 +93,14 @@ div{
       			margin-top: -5px;
       			text-align: right;
       			margin-right: 25px;
-      		li{
-        		list-style: none;
-         		display: inline-block;
-         		margin-right: 15px;
-      	  	}  		 
-    	}
-   }
+      			li
+			{
+        			list-style: none;
+         			display: inline-block;
+         			margin-right: 15px;
+      	  		}	  		 
+    		}
+   	}
 }
 
 .container
@@ -135,7 +145,7 @@ div{
                                         margin-left:25px;
                                         color:black;
                                 }
-			.current
+				.current
 				{
 					color:#bf0000;
 				}
@@ -207,45 +217,96 @@ div{
                         }
 
 		}
-                        div.contact
+		.contact
+		{
+			h1
+			{
+				font-size:25px;
+                                color:#bf0000;
+                                margin-left:20px;
+			}
+                        div
                         {
-                                clear:both;
-                                margin:25px;
+                                margin:10px;
+				width:480px;
+				border-radius:8px;
+				float:left;
+				box-shadow:0px 0px 3px #ccc;
                                 h2
                                 {
-                                        font-size:25px;
-                                        color:#bf0000;
+                                        font-size:20px;
+                                        color:#5a5a5a;
                                         margin-left:20px;
                                 }
                                 h4
                                 {
-                                        font-size:20px;
-                                        padding-left:100px;
+					padding:0px;
+					margin:0px;
+                                        font-size:15px;
+					font-decoration:none;
+					font-weight: normal;
+                                        margin-left:20px;
                                 }
-                                table
-                                {
-                                        border:1px;
-                                        tr
-                                        {
-                                                td img
-                                                {
-                                                        width:25px;
-                                                        height:25px;
-                                                }
-					}
-                                }
+				h4:last-child
+				{
+					margin-bottom:20px;
+				}
 			}
+			table
+			{
+				margin-left:20px;
+				tr
+				{
+					td
+					{
+                               			img
+                             			{
+                                		    	max-width:30px;
+                                		       	height:30px;
+                                		}
+						a 
+						{
+							font-size:20px;
+						}
+					}
+				}
+			}
+		}
+		.aboutus
+		{
+			h2
+			{
+				font-size:20px;
+				color:#5a5a5a;
+				margin: 20px;
+			}
+			p
+			{
+				color:black;
+				font-size:15px;
+				font-weight: normal;
+				margin: 20px;
+			}
+		}
+		.blog
+		{
+			h1
+			{
+				font-size:25px;
+                                color:#bf0000;
+				margin-left:20px;
+			}
+		}
 		.product
 		{	
 			div.product
 			{
-				width:630px;
+				width:950px;
 				height:0 auto;
 				min-height:430px;
 			        margin:20px;
 				float:left;
 				padding-left:20px;
-				border-right:2px solid #bf0000;
 				h2.product
 				{
 					font-size:25px;
@@ -262,12 +323,14 @@ div{
 					float:left;
 					margin-left:10px;
 				}
-				p.product
+				h6.product
 				{
 					clear:both;
+					font-weight: normal;
 					font-size:15px;
-					width:600;
+					width:580;
 					color:black;
+					margin-right:20px;
 					margin-left:10px;
 				}
 				p.product2
@@ -284,36 +347,6 @@ div{
                                         margin-bottom:25px;
 					margin-left:10px;
                                 }
-			}
-			div.soft
-			{
-				width:250px;
-				min-height:430px;
-				margin-left:20px;
-				margin-top:20px;
-				float:left;
-				padding-left:20px;
-				ul.soft
-				{
-					li
-					{
-						h5
-						{
-							font-size:10px;
-						}
-					}
-					h3
-					{
-						font-size:20px;
-						color:#bf0000;
-						margin-left:20px;
-					}
-				}
-				hr
-				{
-					border:none;
-                                	border-bottom: 1px dashed #bf0000;
-				}
 			}
 		}
      	}
