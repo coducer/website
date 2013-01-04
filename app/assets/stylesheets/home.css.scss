@@ -136,29 +136,30 @@ body{
 			border:none;
 			border-bottom:1px solid #bf0000;
 		  }
-		div.link{
+		div.link
+		{
                         a
-                                {
-                                        float:left;
-                                        text-decoration: none;
-                                        margin-bottom:10px;
-                                        margin-left:25px;
-                                        color:black;
-                                }
-				.current
-				{
-					color:#bf0000;
-				}
- 				a:first-child
-				{
-                                        margin-left:10px;
-				}
-                                hr
-                                {
-					border:none;
-                                        border-bottom:1px solid #bf0000;
-                                }
+                        {
+                        	float:left;
+                                text-decoration: none;
+                                margin-bottom:10px;
+                                margin-left:25px;
+                                color:black;
                         }
+			.current
+			{
+				color:#bf0000;
+			}
+ 			a:first-child
+			{
+                                margin-left:10px;
+			}
+                        hr
+                        {
+				border:none;
+                                border-bottom:1px solid #bf0000;
+                        }
+                }
 	
 		p{
 			margin:10px;
@@ -298,29 +299,39 @@ body{
 			}
 		}
 		.product
-		{	
+		{
 			div.product
 			{
 				width:950px;
 				height:0 auto;
-				min-height:430px;
+				min-height:400px;
 			        margin:20px;
 				float:left;
 				padding-left:20px;
 				h2.product
-				{
-					font-size:25px;
+                                {
+                                        font-size:25px;
                                         width:500;
                                         color:#bf0000;
-					margin-left:10px;
-					margin-top:10px;
-				}
-				h5.product
+                                        margin-left:10px;
+                                        margin-top:10px;
+                                }
+				h5
 				{
-					width:90px;
+					width:60px;
+					height:46px;
 					font-size:15px;
 					color:#5a5a5a;
 					float:left;
+					padding-top:22px;
+					text-align:center;
+					background-image:url('hexa_small.png');
+					background-size:60px;
+					margin-left:60px;
+					margin-top:0px;
+				}
+				h5.product
+				{
 					margin-left:10px;
 				}
 				h6.product
@@ -351,4 +362,3 @@ body{
 		}
      	}
 }
-
